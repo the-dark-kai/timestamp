@@ -30,7 +30,7 @@ app.get('/:d', function (req, res) {
     res.setHeader('content-type','application/json');
   res.send(reply);
 });
-app.listen(8080, function () {
+app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 8080!');
 });
 
